@@ -3,8 +3,9 @@ use crate::calculator::{Calculator};
 
 #[derive(Debug, Parser)]
 struct Args {
-    #[arg(help = "位置引数の説明")]
+    #[arg(help = "")]
     addend1: f64,
+    #[arg(help = "")]
     addend2: f64,
 }
 
