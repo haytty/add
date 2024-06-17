@@ -1,9 +1,29 @@
+/// `Calculator` is a structure that represents a simple calculator which can add two numbers.
+///
+/// # Example
+///
+/// ```
+/// let calculator = Calculator::new(1.0, 2.0);
+/// assert_eq!(calculator.calc(), 3.0);
+/// ``` 
 pub struct Calculator {
     addend1: f64,
     addend2: f64,
 }
 
 impl Calculator {
+    /// Constructs a new `Calculator`.
+    ///
+    /// # Arguments
+    ///
+    /// * `addend1` - The first number to add.
+    /// * `addend2` - The second number to add.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// let calculator = Calculator::new(1.0, 2.0);
+    /// ```
     pub fn new(addend1: f64, addend2: f64) -> Self {
         Self {
             addend1,
@@ -11,6 +31,14 @@ impl Calculator {
         }
     }
 
+    /// Adds the two numbers and returns the result.
+    ///
+    /// # Example
+    ///
+    /// ```
+    /// let calculator = Calculator::new(1.0, 2.0);
+    /// assert_eq!(calculator.calc(), 3.0);
+    /// ``` 
     pub fn calc(&self) -> f64 {
         self.addend1 + self.addend2
     }
