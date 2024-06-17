@@ -5,9 +5,7 @@ use crate::calculator::{Calculator};
 ///
 /// # Usage
 ///
-/// ```
-/// let args = Args::parse();
-/// ```
+/// `let args = Args::parse();`
 #[derive(Debug, Parser)]
 struct Args {
     /// The first number to add.
@@ -27,14 +25,11 @@ struct Args {
 ///
 /// If you were to run your program with the following command:
 ///
-/// ```
-/// cargo run -- 1 2
-/// ```
+/// `cargo run -- 1 2`
 ///
 /// It would output `3` to the console.
-/// ```
-/// cargo run -- 1.0 2.0
-/// ```
+///
+/// `cargo run -- 1.0 2.0`
 ///
 /// It would output `3.0` to the console.
 pub fn start() {

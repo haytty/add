@@ -3,6 +3,8 @@
 /// # Example
 ///
 /// ```
+/// use add::calculator::Calculator;
+///
 /// let calculator = Calculator::new(1.0, 2.0);
 /// assert_eq!(calculator.calc(), 3.0);
 /// ``` 
@@ -22,6 +24,8 @@ impl Calculator {
     /// # Example
     ///
     /// ```
+    /// use add::calculator::Calculator;
+    ///
     /// let calculator = Calculator::new(1.0, 2.0);
     /// ```
     pub fn new(addend1: f64, addend2: f64) -> Self {
@@ -36,6 +40,8 @@ impl Calculator {
     /// # Example
     ///
     /// ```
+    /// use add::calculator::Calculator;
+    ///
     /// let calculator = Calculator::new(1.0, 2.0);
     /// assert_eq!(calculator.calc(), 3.0);
     /// ``` 
